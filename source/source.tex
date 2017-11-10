@@ -1,0 +1,27 @@
+% 导言区,主要进行全局设置
+\documentclass{article} % 改变类可以改变文档结构，还有book、report、letter等类
+
+\usepackage{ctex} % 引用ctex宏包才可以使用中文
+
+\title{\LaTeX 源文件的基本结构}
+\author{wanshicheng.org}
+\date{\today}
+
+% 正文区（文稿区）
+\begin{document} % 有且只有一个document环境
+	\maketitle % 输出导言区定义的标题、作者和时间等，注意：letter没有\maketitle命令
+	空行
+	
+	空行
+	
+	不空行 % 不空行不会自动换行
+	不空行
+	
+	内数学公式：$f(x)=x^3$ % “$”区域内的是数学模式，区域外的一般称为文本模式，单$表示行内公式
+	
+	行间数学公式：$$f(x)=\sin \pi x$$ % 双“$”表示行间公式
+	
+	带编号的数学公式：\begin{equation} % 产生带编号的行间公式
+	(A+B)^2=A^2+2AB+B^2%
+	\end{equation}
+\end{document}

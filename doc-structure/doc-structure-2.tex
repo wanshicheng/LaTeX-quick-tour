@@ -1,0 +1,52 @@
+\documentclass[UTF8]{ctexart} % ctexbook, ctexrep
+
+% 可以让生成的文章目录有链接，点击时会自动跳转到该章节。而且也会使得生成的pdf 文件带有目录书签。
+\usepackage{hyperref} 
+\hypersetup{hidelinks} % 没有该命令，目录上会有红色方框
+
+\ctexset {
+	section = {
+		format+ = \zihao{-4} \heiti \raggedright,
+		name = {第,章、},
+		number = \chinese{section},
+		beforeskip = 1.0ex plus 0.2ex minus .2ex,
+		afterskip = 1.0ex plus 0.2ex minus .2ex,
+		aftername = \hspace{0pt}
+	},
+	subsection = {
+		format+ = \zihao{5} \heiti \raggedright,
+		% name = {thesubsection},
+		name = {第,节、},
+		number = \arabic{subsection},
+		beforeskip = 1.0ex plus 0.2ex minus .2ex,
+		afterskip = 1.0ex plus 0.2ex minus .2ex,
+		aftername = \hspace{0pt}
+	}
+}
+
+\begin{document}
+	
+	\tableofcontents % 产生文档目录
+
+	\newpage % 分页
+	
+	%\chapter{章节} % 产生带章节的大纲，只能在book中
+	\section{导言}
+	本书是一部简明扼要的哲学入门，是写给第一次接触哲学的读者看的。一般说来，人们上大学之后才开始学习哲学，所以我想，本书的大多数读者都应该在读大学，或者已经从大学毕业。不过年龄问题与哲学学科的本质并无关系，要是有喜欢抽象观念和理论论证的聪明高中生能读到这本书，并且也能从中享受到哲学思考的乐趣，我会非常高兴的。
+	
+	% 为了保证源文件的清晰，分段通常是用插入空行来实现的。
+	在系统学习关于世界的知识之前，我们的分析能力就已经高度发达了。\par 大概十四岁左右，许多人就开始以自己的方式思考哲学问题了：什么东西真的存在？
+	
+	% 反斜杠只是换行，并没有产生新的段落
+	本书直接介绍九个哲学问题，其中每一个都可以被独立地理解，而不必涉及思想史。\\本书不打算讨论过去伟大的哲学著作，也不讲这些著作的文化背景。
+	
+	\section{外部世界是否存在？}
+	\subsection{他人的意识}
+	\subsubsection{身—心问题} % 在book中subsubsection命令不起作用
+	\subsection{第二节}
+%	\chapter{人生的意义}
+	\subsection{词语的意义}
+	\subsubsection{自由意志}
+	\subsection{对与错}
+	
+\end{document}

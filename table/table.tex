@@ -1,0 +1,24 @@
+\documentclass{ctexart}
+
+\begin{document}
+	% “l”左对齐，“c”居中对齐，“r”右对齐
+	% “p”指定宽度，内容超过宽度自动换行
+	\begin{tabular}{lcccp{1.2cm}} 
+		% 不同列间用“&”符号分割，用“\\”结束本行，并产生新的一行
+		姓名 & 语文 & 数学 & 外语 & 备注 \\ 
+		张三 & 88 & 90 & 92 & 特别优秀 \\
+		张三 & 88 & 90 & 92 & 优秀 \\
+	\end{tabular}
+
+	\begin{tabular}{|l||c|c|c|p{1.2cm}|} % “|”表格竖线,"||"表格双竖线
+		% “p”指定宽度，并自动换行
+		\hline %表格竖线
+		姓名 & 语文 & 数学 & 外语 & 备注 \\ 
+		\hline % 表格竖线
+		张三 & 88 & 90 & 92 & 特别优秀 \\
+		\hline \hline % 表格双竖线
+		张三 & 88 & 90 & 92 & 优秀 \\
+		\hline
+
+	\end{tabular}
+\end{document}

@@ -1,0 +1,49 @@
+\documentclass{article}
+
+\usepackage[10pt]{ctex} % []中设置normal size大小,一般只有10、11、12pt
+% 定义新的命令
+\newcommand{\myfont}{\textit{\textbf{\textsf{This is my font.}}}}
+
+\begin{document}%有且只有document环境
+	% 命令
+	% 字体族设置（罗马字体、无称线字体、打字机字体）
+	\textrm{Roman Family} \textsf{Sans Serif Family} \texttt{Typewriter Family}
+
+	%声明
+	{\rmfamily Roman Family} {\sffamily Sans Serif Family} {\ttfamily Typewriter Family} % 用“{}”进行分组
+	
+	\rmfamily LaTeX is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation.
+	
+	LaTeX is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation.
+	
+	\ttfamily LaTeX is a high-quality typesetting system; it includes features designed for the production of technical and scientific documentation.
+	
+	% 字体系列设置
+	\textmd{Medium Series} \textbf{Boldface Series}
+	
+	{\mdseries Medium Series} {\bfseries Boldface Series}
+	% 字体形状设置
+	{\upshape Upright Shape} {\itshape Italic Shape} {\slshape Slanted Shape} {\scshape Small Caps Shape}
+	
+	%中文字体设置
+	{\songti 宋体} \quad {\heiti 黑体} \quad {\fangsong 仿宋} \quad {\kaishu 楷书} \textbf{粗体} \textit{斜体}  %粗体——黑体 斜体——楷书
+	
+	% 字体大小
+	{\tiny Hello} \\
+	{\scriptsize Hello} \\
+	{\footnotesize Hello} \\
+	{\small Hello} \\
+	{\normalsize Hello} \\
+	{\large Hello} \\
+	{\Large Hello} \\
+	{\LARGE Hello} \\
+	{\huge Hello} \\
+	{\Huge Hello} \\
+
+	%中文字号设置命令
+	\zihao{-0} 你好！% 参数“-0”表示小初号
+	\zihao{5} 你好！% 参数“5”表示5号
+	
+	\myfont 
+	
+\end{document}
